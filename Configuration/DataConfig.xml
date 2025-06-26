@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Enviorment>
+    <!-- !TimeOut -->
+    <TimeOut>5</TimeOut>
+    <!-- !General -->
+
+
+
+
+      <!-- !Web -->
+    <BrowserName>chrome</BrowserName>
+    <Url>https://saucedemo.com/</Url>
+    <UrlMain>https://saucedemo.com/inventory.html</UrlMain>
+    <cartImageRepo>C://Automation//JavaCourse//AutomationInfrastructure//ImageRepository//</cartImageRepo>
+    <ImageRepo>C:/Automation/JavaCourse//AutomationInfrastructure//ImageRepository//SouceDemoCart.png</ImageRepo>
+
+
+    <!-- DATA DRIVEN TESTING -->
+    <DDTFile>./DDTFiles/usersAndPass.csv</DDTFile>
+
+    <!-- Mobile -->
+    <UDID>R5CX41XQV8K</UDID>
+    <AppPackage>com.atidcollege.atidexpensetracker</AppPackage>
+    <AppActivity>.MainActivity</AppActivity>
+    <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+
+    <!-- API -->
+    <UrlAPI>https://dummy.restapiexample.com/api/v1</UrlAPI>
+
+    <!-- Electron -->
+    <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
+    <ElectronAppPath>C:/Automation/electron-api-demos-windows (1)/ElectronAPIDemos-win32-ia32/ElectronAPIDemos.exe</ElectronAppPath>
+
+    <!-- Desktop -->
+    <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>
+    <AppiumServerDesktop>http://127.0.0.1:4723</AppiumServerDesktop>
+
+    <!-- Database -->
+    <DBURL>C:\\Automation\\JavaCourse\\AutomationInfrastructure\\DataBase\\login.db</DBURL>
+
+
+
+
+
+</Enviorment>
+
+
