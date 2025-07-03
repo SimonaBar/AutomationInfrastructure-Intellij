@@ -16,6 +16,12 @@ import static org.monte.media.VideoFormatKeys.DepthKey;
 import static org.monte.media.VideoFormatKeys.ENCODING_AVI_TECHSMITH_SCREEN_CAPTURE;
 import static org.monte.media.VideoFormatKeys.QualityKey;
 
+/**
+ * MonteScreenRecorder records a video of the screen during tests.
+ * - Starts and stops recording for each test method.
+ * - Saves videos in ./test-recordings/ folder.
+ * - Videos help debug test failures.
+ */
 
 public class MonteScreenRecorder extends ScreenRecorder
 {

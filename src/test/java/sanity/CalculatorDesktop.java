@@ -18,7 +18,6 @@ public class CalculatorDesktop extends CommonOps {
         DesktopFlows.calculateAddition();
         Verifications.verifyTextInElementInDesktop(calcAppMain.filed_Result,
                 "3");
-       // System.out.println(calcAppMain.filed_Result.getText());
 
     }
 

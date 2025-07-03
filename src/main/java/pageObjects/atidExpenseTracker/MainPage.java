@@ -22,7 +22,7 @@ public class MainPage {
     private By txt_expenseAmount= By.id("expense-amount"); // Manually enter the expense amount
     private By date_expenseDate= By.id("expense-date"); // Select a specific date
 
-    private By Full_date_expenseDate= By.xpath("//*[@text='30']"); // בחירת תאריך ספציפי
+    private By Full_date_expenseDate= By.xpath("//*[@text='30']"); // choosing a specific date
     private By btn_choose= By.id("button1"); // Button to confirm the date selection
 
 

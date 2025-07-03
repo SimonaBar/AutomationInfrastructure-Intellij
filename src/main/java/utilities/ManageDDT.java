@@ -8,13 +8,31 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.List;
 
+/**
+ * Handles reading data from CSV files
+ * and provides this data to TestNG tests
+ * for Data-Driven Testing (DDT).
+ */
+
 public class ManageDDT extends CommonOps{
 
+
+    /**
+     * TestNG Data Provider named "data-provider-users".
+     * Loads test data from a CSV file path
+     * defined in DataConfig.xml.
+     */
     @DataProvider(name="data-provider-users")
     public Object[][]getDataObject(){
         return getDataFromCSV(getData("DDTFile"));
 
     }
+
+    /**
+     * Reads all lines from a CSV file
+     * and returns them as a list of strings.
+     * Each line in the file becomes a string in the list.
+     */
     public static List<String>readCSV(String csvFile){  // Reads a CSV file composed of String data
         List<String>lines=null; // First, initialize the list of lines
         File file=new File(csvFile);
@@ -25,7 +43,11 @@ public class ManageDDT extends CommonOps{
         }
         return lines;  // Return the list of lines read from the CSV file
     }
-
+    /**
+     * Converts data from a CSV file into a 2D Object array.
+     * Each row in the CSV becomes one row in the array.
+     * Fields in the CSV row are separated by commas.
+     */
     public static Object[][]getDataFromCSV(String filePath){
         List<String> csvData = readCSV(filePath);
         if (csvData.isEmpty()) return new Object[0][0]; // Handle empty files

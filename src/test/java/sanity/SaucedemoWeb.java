@@ -10,7 +10,7 @@ import workflows.WebFlows;
 
 
 @Listeners(utilities.Listeners.class)
-public class saucedemoWeb extends CommonOps {
+public class SaucedemoWeb extends CommonOps {
 
     // בגלל שהכל מוגדר סטטי, אנחנו קוראים לשם המחלקה נקודה שם הפונקציה שהיא login ובעצם פה אנחנו רושמים את כל הטסטים שלנו
     @Test(description = "Test01- Verify Header After Login")

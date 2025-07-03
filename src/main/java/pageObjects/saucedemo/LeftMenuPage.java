@@ -9,18 +9,8 @@ public class LeftMenuPage {
     public WebElement btn_menu;
 
 
-  //  @FindBy (id = "inventory_sidebar_link")
-   // public WebElement btn_allitems;
-
- //   @FindBy (id = "about_sidebar_link")
- //   public WebElement btn_about;
-
-    @FindBy (id = "logout_sidebar_link")
+    @FindBy (id = "logout_sidebar_link") // This is the logout button
     public WebElement btn_logout;
-
-  //  @FindBy (id = "reset_sidebar_link")
-  //  public WebElement btn_restappstate;
-
 
 
 

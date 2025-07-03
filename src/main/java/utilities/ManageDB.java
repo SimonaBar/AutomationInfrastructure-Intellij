@@ -3,10 +3,18 @@ package utilities;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Handles operations related to database connections
+ * such as opening and closing connections to SQLite.
+ * This class extends CommonOps to use shared variables like 'con' and 'stmt'.
+ */
+
 public class ManageDB extends CommonOps {
-
-
-
+    /**
+     * Closes the existing database connection if it is open.
+     * Ensures that resources are released properly at the end of testing.
+     * Prints an error message if closing fails.
+     */
 
     public static void endConnection(){
         try {
@@ -16,6 +24,11 @@ public class ManageDB extends CommonOps {
         }
     }
 
+    /**
+     * Opens a connection to a SQLite database using the JDBC driver.
+     * Builds the JDBC URL based on the given database path,
+     * and creates a Statement object for executing SQL queries.
+     */
     public static void openConnection(String dbPath) {
         try {
             Class.forName("org.sqlite.JDBC");

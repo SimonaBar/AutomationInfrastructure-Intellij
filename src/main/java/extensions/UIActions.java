@@ -17,12 +17,6 @@ public class UIActions extends CommonOps {
     // such as click, text input, dropdown selection, etc.,
     // to avoid duplicating these actions in multiple test scripts.
 
-   // @Step("Click on Element")
-    //public static void click(WebElement elem){
-     //   wait.until(ExpectedConditions.elementToBeClickable(elem)); // Wait until the element is clickable before performing a click
-      //  elem.click();
-  //  }
-
 
     @Step("Click on Element")
     public static void click1(WebElement elem){
@@ -60,13 +54,13 @@ public class UIActions extends CommonOps {
         action.moveToElement(elem1).click().build().perform();
 
     }
+
+    //Drags the given element by an offset of 100 pixels on the X-axis
+    // and 50 pixels on the Y-axis.
     @Step("move by offset")
     public static void move(WebElement elem1 ){
         wait.until(ExpectedConditions.visibilityOf(elem1));
         action.clickAndHold(elem1).moveByOffset(100,50).release().perform();
-
-
-
     }
 
 }

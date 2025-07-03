@@ -20,14 +20,14 @@ import java.time.Duration;
 public class MobileActions extends CommonOps {
     @Step("Update Text Element")
     public static void updateText(MobileElement elem, String text){
-        // wait until the element will be visible on the screen and only then i can send keys
+        // wait until the element will be visible on the screen and only then I can send keys
         wait.until(ExpectedConditions.visibilityOf(elem));
         elem.sendKeys(text);
     }
 
     @Step("Click on Element")
     public static void click(MobileElement elem){
-        // wait until the element will be clickable on the screen and only then i can send keys
+        // wait until the element will be clickable on the screen and only then I can send keys
         wait.until(ExpectedConditions.elementToBeClickable(elem));
         elem.click();
     }

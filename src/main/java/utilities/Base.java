@@ -33,6 +33,7 @@ public class Base {
 
     // the sauceDemoLogin is a new element that we are going to initialization.
     // First we write the package and then the element
+
     // page objects-WEB
     protected static pageObjects.saucedemo.LoginPage sauceDemoLogin;
     protected static pageObjects.saucedemo.MainPage sauceDemoMain;

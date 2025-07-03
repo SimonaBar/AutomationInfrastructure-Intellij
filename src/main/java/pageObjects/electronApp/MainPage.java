@@ -22,10 +22,11 @@ public class MainPage  {
     public WebElement txt_close;
 ///////////////////////////////////////////////////////////////////
 
-
+    // this is the button that opens the second new window
     @FindBy(id = "manage-window")
     public WebElement btn_manageWindow;
 
+    // this is the button in the new window
     @FindBy(tagName = "p")
     public WebElement newWindow;
 

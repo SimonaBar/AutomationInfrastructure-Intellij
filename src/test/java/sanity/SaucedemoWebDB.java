@@ -7,12 +7,10 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.WebFlows;
 
-import java.io.File;
-
 
 @Listeners(utilities.Listeners.class)
 
-public class saucedemoWebDB extends CommonOps {
+public class SaucedemoWebDB extends CommonOps {
 
     @Test(description = "Test01- Verify Header After Login With User and Pass From Database")
     @Description("This Test Is Login Using Data From Database and Verifies Header")
