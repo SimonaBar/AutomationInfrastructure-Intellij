@@ -57,6 +57,7 @@ By default, TestNG generates HTML and XML reports under `target/surefire-reports
 - **Sikuli Testing:**  
   During visual testing with Sikuli, some tests failed due to differences in image resolution or screen scaling settings. This caused Sikuli to be unable to locate UI elements based on screenshots.
 
+![image](https://github.com/user-attachments/assets/bb50a5b4-952c-4240-9048-2b7da93dc02c)
 
 
 
