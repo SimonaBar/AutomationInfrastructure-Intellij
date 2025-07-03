@@ -1,4 +1,4 @@
- Final Project Test Automation 2025
+ **FinalProject Test Automation 2025**
 
 This project is a comprehensive automation framework designed for functional and regression testing
 across multiple platforms and technologies, including Web, Mobile, Desktop, Electron, API, and Database layers.
